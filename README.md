@@ -5,6 +5,7 @@ Maquina expendedora que ofrece una cantidad limitada de productos asociados con 
 ## Integrantes del equipo
 
 Alvaro Garcia del Monte 54611
+
 Diego Rodriguez de la Tapia 54965
 
 
