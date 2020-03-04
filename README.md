@@ -1,10 +1,12 @@
-# Título del trabajo
+# Maquina Expendedora
 
-Descripción breve del proyecto a realizar (2-3 frases).
+Maquina expendedora que ofrece una cantidad limitada de productos asociados con sus precios y capaz de leer la cantidad de dinero introducido por el usuario y devolverle el cambio.
 
 ## Integrantes del equipo
 
-Nombres, apellidos, y usuario GitHub de los integrantes del equipo.
+Alvaro Garcia del Monte 54611
+Diego Rodriguez de la Tapia 54965
+
 
 ## Objetivos del trabajo
 
