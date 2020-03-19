@@ -7,14 +7,14 @@ int main(){
 	float precio=0.0,pago_introducido,pago_total=0.0,vuelta=0.0;
 	
 	do{
-	printf("Bienvenido\nSeleccione la operacion que desee realizar:\n");
+	printf("\nBienvenido\nSeleccione la operacion que desee realizar:\n");
 	printf("'C' para comprar\n'P' para pagar\n'S' para ver su carro actual\n");
 	fflush(stdin);
 	scanf("%c",&eleccion_operacion);
 	
 	if ((eleccion_operacion == 'C') || (eleccion_operacion == 'c')){
 		do{
-			printf("Ha seleccionado comprar. Seleccione el producto deseado:\n");
+			printf("\nHa seleccionado comprar. Seleccione el producto deseado:\n");
 			printf("'P' para palmera 1€\n'C' para concha 0.5€\n'N' para napolitana 1€\n'O' para coca cola 0.75€\n'A' para agua 0.5€\n");
 			fflush(stdin);
 			scanf("%c",&eleccion_productos);
@@ -43,8 +43,11 @@ int main(){
 				printf("Esa letra no corresponde a ningun producto\n");
 			}
 			fflush(stdin);
-			printf("Desea comprar algo mas?\n'S' para si\n'N' para no\n");
+			printf("\nDesea comprar algo mas?\n'S' para si\n'N' para no\n");
 			scanf("%c",&deseo_compra);
+			if((deseo_compra == 'N')||(deseo_compra == 'n')){
+				break;
+			}
 		}while ((deseo_compra != 'N') || (deseo_compra != 'n'));
 	}
 	
@@ -53,7 +56,7 @@ int main(){
 	}
 	
 	if((eleccion_operacion == 'P') || (eleccion_operacion == 'p')){
-		printf("Cantidad a introducir:%f",precio);
+		printf("\n\nCantidad a introducir:%.2f\n",precio);
 		while(pago_total<precio){
 			printf("Introduzca el dinero\n");
 			fflush(stdin);
@@ -61,10 +64,14 @@ int main(){
 			pago_total+=pago_introducido;
 		}
 		vuelta=pago_total-precio;
-		printf("Su vuelta es: %f",vuelta);
+		printf("\nSu vuelta es: %.2f\n",vuelta);
 	}
-	printf("Desea realizar alguna otra operacion?\n'S' para si\n'N para no'\n");
+	printf("\nDesea realizar alguna otra operacion?\n'S' para si\n'N para no'\n");
 	fflush(stdin);
 	scanf("%c",&deseo_operacion);
+	if((deseo_operacion == 'N')||(deseo_operacion == 'n')){
+		break;
+	}
 	}while((deseo_operacion != 'N') || (deseo_operacion != 'n'));
+	printf("\nHasta la proxima!\n");
 }
