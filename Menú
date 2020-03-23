@@ -45,10 +45,9 @@ int main(){
 			fflush(stdin);
 			printf("\nDesea comprar algo mas?\n'S' para si\n'N' para no\n");
 			scanf("%c",&deseo_compra);
-			if((deseo_compra == 'N')||(deseo_compra == 'n')){
-				break;
+			
 			}
-		}while ((deseo_compra != 'N') || (deseo_compra != 'n'));
+		}while ((deseo_compra != 'N') && (deseo_compra != 'n'));
 	}
 	
 	if((eleccion_operacion == 'S')||(eleccion_operacion == 's')){
@@ -69,9 +68,8 @@ int main(){
 	printf("\nDesea realizar alguna otra operacion?\n'S' para si\n'N para no'\n");
 	fflush(stdin);
 	scanf("%c",&deseo_operacion);
-	if((deseo_operacion == 'N')||(deseo_operacion == 'n')){
-		break;
+	
 	}
-	}while((deseo_operacion != 'N') || (deseo_operacion != 'n'));
+	}while((deseo_operacion != 'N') && (deseo_operacion != 'n'));
 	printf("\nHasta la proxima!\n");
 }
