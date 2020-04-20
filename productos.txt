@@ -1,0 +1,10 @@
+Palmeras(P)		1.00	10
+Conchas(C)		0.50	10
+Napolitanas(N)	1.00	10
+CocaColas(O)	0.75	10
+Aguas(A)		0.50	10
+Sanwiches(S)  	1.70	10
+Haribo(H)     	2.00	10
+Aquarius(Q)    	0.80	10
+Bocata(B)      	2.00	10
+KitKat(K)    	1.50	10
