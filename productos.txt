@@ -1,5 +1,0 @@
-Palmeras	1		10
-Conchas		0.5		10
-Napolitanas	1		10
-CocaColas	0.75		10
-Aguas		0.5		10
